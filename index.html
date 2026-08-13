@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lima 2027 | Foo Fighters</title>
+    <title>Foo en Lima | Foo Fighters</title>
     <!-- Fuente moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Iconos -->
@@ -38,7 +38,7 @@
         header {
             background: linear-gradient(135deg, var(--boca-blue) 0%, var(--boca-blue-grad) 100%);
             color: #fff;
-            padding: 3rem 1.5rem 2.5rem 1.5rem; /* Ajustado para que no sobre espacio */
+            padding: 3rem 1.5rem 2.5rem 1.5rem;
             border-bottom-left-radius: 35px;
             border-bottom-right-radius: 35px;
             position: relative;
@@ -65,7 +65,7 @@
         /* Contenedor Principal */
         main {
             padding: 0 1.2rem;
-            margin-top: 1.5rem; /* Separación limpia del header */
+            margin-top: 1.5rem;
         }
 
         /* Animaciones */
@@ -103,7 +103,7 @@
         }
 
         .card h3 i {
-            background-color: rgba(251, 184, 0, 0.15); /* Fondo amarillito translúcido */
+            background-color: rgba(251, 184, 0, 0.15);
             color: var(--boca-yellow);
             padding: 10px;
             border-radius: 12px;
@@ -224,7 +224,7 @@
 <body>
 
     <header>
-        <h1>Lima 2027</h1>
+        <h1>Foo en Lima</h1>
         <p><i class="fa-solid fa-calendar-days"></i> Marzo 2027 | Foo Fighters Tour</p>
     </header>
 
@@ -327,10 +327,21 @@
             </div>
         </div>
 
-        <!-- SECCIÓN: ACTIVIDADES -->
+        <!-- SECCIÓN: ACTIVIDADES / EXTRAS -->
         <div id="actividades" class="section-content">
+            <!-- TARJETA DE SUGERENCIAS TRIPADVISOR -->
             <div class="card">
-                <h3><i class="fa-solid fa-map"></i> Actividad 1</h3>
+                <h3><i class="fa-solid fa-compass" style="color: #00AF87; background-color: rgba(0, 175, 135, 0.1);"></i> Qué hacer en Lima</h3>
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-gray); margin-bottom: 1rem;">
+                    Mirá las atracciones, tours y recomendaciones imperdibles para recorrer la ciudad.
+                </p>
+                <a href="https://www.tripadvisor.com.ar/Attractions-g294316-Activities-oa0-Lima_Lima_Region.html" target="_blank" class="btn" style="background-color: #00AF87; color: white;">
+                    <i class="fa-solid fa-mountain-city"></i> Ver Actividades en TripAdvisor
+                </a>
+            </div>
+
+            <div class="card">
+                <h3><i class="fa-solid fa-map"></i> Actividad Personalizada</h3>
                 <div class="detail-row">
                     <span class="detail-label">Nombre:</span>
                     <span class="detail-value">Tour Gastronómico</span>
@@ -341,10 +352,6 @@
                 </div>
                 <button class="btn btn-outline" style="border: none; background: #F0F4F8;"><i class="fa-solid fa-pen"></i> Editar Info</button>
             </div>
-            
-            <button class="btn btn-outline">
-                <i class="fa-solid fa-plus"></i> Añadir actividad
-            </button>
         </div>
     </main>
 
