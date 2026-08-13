@@ -269,7 +269,10 @@
                     <span class="detail-label">Total Pagado:</span>
                     <span class="detail-value">S/. 414.00</span>
                 </div>
-                <button class="btn"><i class="fa-solid fa-download"></i> Gestionar Entradas</button>
+                <!-- BOTÓN MODIFICADO PARA ABRIR QUENTRO -->
+                <button class="btn" onclick="abrirQuentro()" style="background-color: #000; color: #00FF7F; border: 1px solid #00FF7F;">
+                    <i class="fa-solid fa-mobile-screen"></i> Abrir en Quentro
+                </button>
             </div>
         </div>
 
@@ -368,6 +371,14 @@
             // Mostrar la sección seleccionada y activar el icono
             document.getElementById(tabId).classList.add('active');
             element.classList.add('active');
+        }
+
+        // Lógica para intentar abrir la app Quentro
+        function abrirQuentro() {
+            // Usa el esquema de URL personalizado para intentar lanzar la app en el celular
+            window.location.href = "quentro://";
+            
+            // Si estás en la compu o no tenés la app instalada, no hará nada, pero desde el celu debería saltar directo.
         }
     </script>
 </body>
